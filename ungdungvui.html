@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<tr>
+    <h1><u>Do You Love Me?</u></h1>
+</tr>
+<button  onclick="mylove()"><h2>Yes</h2></button>
+<button id="no" onmouseover="random()" style="position: absolute;left:500px;top:300px"><h2>No</h2></button>
+<script>
+    function mylove() {
+        alert("love you:tuan said");
+    }
+    function random() {
+        let a = Math.round(Math.random()*window.innerHeight);
+         let b = Math.round(Math.random()*window.innerWidth);
+        document.getElementById("no").style.top=a + 'px';
+        document.getElementById("no").style.left=b + 'px';
+
+    }
+
+</script>
+</body>
+</html>
